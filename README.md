@@ -1,2 +1,2 @@
-# jAnime
+# anime api
 still in development
