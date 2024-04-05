@@ -162,7 +162,7 @@ builder.defineStreamHandler(async ({ type, id }) => {
 
     if (url) {
       return Promise.resolve({
-        streams: [{ url: url, title: `🎞️ Aniwatch - Auto` }],
+       sources: [{ file: url, type: `hls`, label: `auto` }],
       });
     } else {
       return Promise.reject(new Error("No streaming URL found"));
